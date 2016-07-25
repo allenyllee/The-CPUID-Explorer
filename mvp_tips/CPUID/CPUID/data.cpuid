@@ -1,0 +1,51 @@
+<?xml version "1.0"?>
+<CPUID:block>
+   <CPUID:CPUID EAX="0x0">
+     <CPUID:EAX value="0x00000002" />
+     <CPUID:EBX value="0x756e6547" />
+     <CPUID:ECX value="0x6c65746e" />
+     <CPUID:EDX value="0x49656e69" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x1">
+     <CPUID:EAX value="0x00000f27" />
+     <CPUID:EBX value="0x0002080b" />
+     <CPUID:ECX value="0x00000400" />
+     <CPUID:EDX value="0xbfebfbff" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x2">
+     <CPUID:EAX value="0x665b5001" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x007b7040" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000000">
+     <CPUID:EAX value="0x80000004" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000001">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000002">
+     <CPUID:EAX value="0x20202020" />
+     <CPUID:EBX value="0x20202020" />
+     <CPUID:ECX value="0x20202020" />
+     <CPUID:EDX value="0x20202020" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000003">
+     <CPUID:EAX value="0x6e492020" />
+     <CPUID:EBX value="0x286c6574" />
+     <CPUID:ECX value="0x58202952" />
+     <CPUID:EDX value="0x286e6f65" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000004">
+     <CPUID:EAX value="0x20294d54" />
+     <CPUID:EBX value="0x20555043" />
+     <CPUID:ECX value="0x30302e32" />
+     <CPUID:EDX value="0x007a4847" />
+   </CPUID:CPUID>
+</CPUID:block>

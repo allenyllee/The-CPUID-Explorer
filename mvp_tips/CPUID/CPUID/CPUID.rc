@@ -1,0 +1,2506 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\CPUID.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CPUID.ico"
+IDI_JMN                 ICON                    "res\\jmn.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About CPUID"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,6,20,20
+    LTEXT           "CPUID Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright  © 2007, Joseph M. Newcomer, All Rights Reserved",
+                    IDC_STATIC,37,40,192,22
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    ICON            IDI_JMN,IDC_STATIC,9,39,20,20
+    LTEXT           "AMD CPUID displays based on AMD CPUID Specification Publication #25841 Rev 2.18 (January 2006)",
+                    IDC_STATIC,17,126,204,21
+    LTEXT           "Intel CPUID displays based on Intel instruction set reference Order Number: 253666-022US (November 2006) and Intel® 64 and IA-32 Architectures Software Developer’s Manual, Documentation Changes, (October 2006)",
+                    IDC_STATIC,17,79,204,32
+    LTEXT           "For the latest version go to www.flounder.com/mvp_tips",
+                    IDC_STATIC,17,66,182,8
+END
+
+IDD_CPUID_DIALOG DIALOGEX 0, 0, 400, 398
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CPUID Explorer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EAX_INPUT,27,1,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EAX",IDC_STATIC,7,17,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EAX,27,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EBX",IDC_STATIC,8,33,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,27,33,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ECX",IDC_STATIC,189,17,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,209,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EDX",IDC_STATIC,189,33,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,209,33,144,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "7",IDC_CPU7,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,22,57,20,10
+    CONTROL         "6",IDC_CPU6,"Button",BS_AUTORADIOBUTTON,48,57,20,10
+    CONTROL         "5",IDC_CPU5,"Button",BS_AUTORADIOBUTTON,74,57,20,10
+    CONTROL         "4",IDC_CPU4,"Button",BS_AUTORADIOBUTTON,100,57,20,10
+    CONTROL         "3",IDC_CPU3,"Button",BS_AUTORADIOBUTTON,126,57,20,10
+    CONTROL         "2",IDC_CPU2,"Button",BS_AUTORADIOBUTTON,152,57,20,10
+    CONTROL         "1",IDC_CPU1,"Button",BS_AUTORADIOBUTTON,178,57,20,10
+    CONTROL         "0",IDC_CPU0,"Button",BS_AUTORADIOBUTTON,204,57,20,10
+    GROUPBOX        "CPU",IDC_CPU_CAPTION,17,49,213,22,WS_GROUP
+    CONTROL         "",IDC_LEAVES,"SysTabControl32",TCS_MULTILINE,1,75,398,
+                    323
+    PUSHBUTTON      "",IDC_TOCLIP,338,51,14,14,BS_BITMAP
+END
+
+IDD_LEAVES DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_CPUID_BASIC_3 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ECX: PSN<0..31>",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EDX: PSN<32..63>",IDC_STATIC,71,60,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_PSN,14,85,120,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Processor Serial No. EDX:ECX",IDC_STATIC,138,84,164,14,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_1_EAX_INTEL DIALOGEX 0, 0, 355, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "31..28",IDC_RESERVED_32_28,16,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "27..20",IDC_EXTENDED_CPU_ID,48,7,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "19..16",IDC_EXTENDED_MODEL_ID,112,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..14",IDC_RESERVED_15_14,144,7,16,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "13..12",IDC_PROCESSOR_TYPE,160,7,16,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "11..8",IDC_FAMILY_ID,176,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..4",IDC_MODEL,208,7,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "3..0",IDC_STEPPING_ID,240,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,31,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,79,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,127,18,1,63
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,151,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,167,18,1,83
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,193,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,223,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,255,18,1,26
+    CTEXT           "Extended Model ID",IDC_EXTENDED_MODEL_ID_CAPTION,111,81,
+                    32,19
+    CTEXT           "Reserved",IDC_RESERVED_15_14_CAPTION,133,44,31,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Processor Type",IDC_PROCESSOR_TYPE_CAPTION,150,102,35,
+                    19
+    CTEXT           "Family ID",IDC_FAMILY_ID_CAPTION,175,44,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Model",IDC_MODEL_CAPTION,207,44,32,11,SS_CENTERIMAGE
+    CTEXT           "Stepping ID",IDC_STEPPING_ID_CAPTION,239,44,32,21
+    CTEXT           "Reserved",IDC_RESERVED_32_28_CAPTION,15,44,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Extended Family ID",IDC_EXTENDED_CPU_ID_CAPTION,47,44,
+                    64,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,167,121,1,15
+    EDITTEXT        IDC_PROCESSOR_TYPE_STRING,21,137,147,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_EXTENDED_FAMILY_1,"Static",SS_ETCHEDVERT,193,54,1,
+                    65
+    CONTROL         "",IDC_EXTENDED_FAMILY_2,"Static",SS_ETCHEDVERT,79,54,1,
+                    8
+    CONTROL         "",IDC_EXTENDED_FAMILY_3,"Static",SS_ETCHEDHORZ,79,61,
+                    115,1
+    EDITTEXT        IDC_COMPUTED_FAMILY_ID,193,119,57,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Computed Family ID",IDC_COMPUTED_FAMILY_ID_CAPTION,196,
+                    106,74,11
+    EDITTEXT        IDC_COMPUTED_MODEL,223,84,57,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Computed Model",IDC_COMPUTED_MODEL_CAPTION,227,72,74,11
+    CONTROL         "",IDC_COMPUTED_MODEL_1,"Static",SS_ETCHEDVERT,223,55,1,
+                    30
+    CONTROL         "",IDC_COMPUTED_MODEL_2,"Static",SS_ETCHEDHORZ,146,90,78,
+                    1
+    LTEXT           "Intel",IDC_PLATFORM,2,162,16,8
+END
+
+IDD_CPUID_BASIC_1_EBX DIALOGEX 0, 0, 355, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "31..24",IDC_INITIAL_APIC,16,7,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..8",IDC_CLFLUSH_LINE_SIZE,144,6,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "23..16",IDC_LOGICAL_PROCESSORS,80,6,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_BRAND_INDEX,208,7,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,47,18,1,50
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,111,18,1,36
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,176,18,1,50
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,240,18,1,50
+    CTEXT           "Initial APIC value",IDC_INITIAL_APIC_CAPTION,16,67,64,
+                    11,SS_CENTERIMAGE
+    CTEXT           "CLFLUSH Line Size",IDC_CLFLUSH_LINE_SIZE_CAPTION,144,67,
+                    64,11,SS_CENTERIMAGE
+    CTEXT           "Logical processors",IDC_LOGICAL_PROCESSORS_CAPTION,74,
+                    55,76,11,SS_CENTERIMAGE
+    CTEXT           "Brand Index",IDC_BRAND_INDEX_CAPTION,208,67,64,11,
+                    SS_CENTERIMAGE
+    CTEXT           "?*8",IDC_CACHE_LINE_SIZE,145,82,64,11
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,239,79,1,21
+    EDITTEXT        IDC_BRAND_INDEX_NAME,25,100,215,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CPUID_BASIC_1_ECX_INTEL DIALOGEX 0, 0, 355, 213
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_SSE3,274,6,8,198,SS_NOTIFY
+    CTEXT           "2..1",IDC_RESERVED1,258,6,16,188,SS_NOTIFY
+    CTEXT           "3",IDC_MWAIT,250,6,8,176,SS_NOTIFY
+    CTEXT           "4",IDC_CPL,238,6,8,161,SS_NOTIFY
+    CTEXT           "5",IDC_VMX,230,6,8,140,SS_NOTIFY
+    CTEXT           "6",IDC_RESERVED2,222,6,8,141,SS_NOTIFY
+    CTEXT           "7",IDC_EST,214,6,8,128,SS_NOTIFY
+    CTEXT           "8",IDC_TM2,202,6,8,113,SS_NOTIFY
+    CTEXT           "9",IDC_RESERVED3,194,6,8,103,SS_NOTIFY
+    CTEXT           "10",IDC_L1,186,6,8,92,SS_NOTIFY
+    CTEXT           "11",IDC_RESERVED4,178,6,8,80,SS_NOTIFY
+    CTEXT           "13",IDC_CMPXCHG16B,158,6,8,44,SS_NOTIFY
+    CTEXT           "31..14",IDC_RESERVED6a,140,7,8,28,SS_NOTIFY
+    CTEXT           "31..15",IDC_RESERVED6,12,7,136,11,SS_NOTIFY
+    RTEXT           "Reserved ",IDC_RESERVED6_CAPTION,44,28,104,11,
+                    SS_CENTERIMAGE
+    RTEXT           "CMPXCHG16B ",IDC_CMPXCHG16B_CAPTION,52,50,112,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED5_CAPTION,52,61,115,11,
+                    SS_CENTERIMAGE
+    RTEXT           "L1 Context ID ",IDC_L1_CAPTION,68,87,122,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved",IDC_RESERVED3_CAPTION,68,98,127,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Thermal Monitor 2",IDC_TM2_CAPTION,68,109,137,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Enhanced Intel SpeedStep Technology ",IDC_EST_CAPTION,
+                    84,124,131,11,SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED2_CAPTION,84,135,140,11,
+                    SS_CENTERIMAGE
+    RTEXT           "VMX: VMX Technology ",IDC_VMX_CAPTION,84,146,149,11,
+                    SS_CENTERIMAGE
+    RTEXT           "DS-CPL: CPL Qualified Debug Store",IDC_CPL_CAPTION,84,
+                    157,157,11,SS_CENTERIMAGE
+    RTEXT           "MONITOR/MWAIT available ",IDC_MWAIT_CAPTION,100,172,153,
+                    11,SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,100,183,165,11,
+                    SS_CENTERIMAGE
+    RTEXT           "SSE3 Extensions implemented ",IDC_SSE3_CAPTION,100,194,
+                    177,11,SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED4_CAPTION,68,76,116,11,
+                    SS_CENTERIMAGE
+    CTEXT           "12",IDC_RESERVED5,166,6,8,66,SS_NOTIFY
+    LTEXT           "Intel",IDC_PLATFORM,2,186,16,8
+    CTEXT           "14",IDC_XPTR,150,6,8,44,SS_NOTIFY
+    RTEXT           "xPTR Update Control",IDC_XPTR_CAPTION,52,39,104,11,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_1_EDX_INTEL DIALOGEX 0, 0, 373, 163
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_FPU,351,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,343,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,335,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,327,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,323,6,4,11
+    CTEXT           "4",IDC_TSC,315,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,307,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,299,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,291,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "8",IDC_CX8,279,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,271,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,263,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "11",IDC_SEP,255,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "12",IDC_MTRR,243,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,235,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,227,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,219,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "16",IDC_PAT,207,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "18",IDC_PSN,192,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "19",IDC_CFLSH,184,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "20",IDC_RESERVED2,172,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "21",IDC_DS,164,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "22",IDC_ACPI,156,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "24",IDC_FXSR,136,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "25",IDC_SSE,128,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "26",IDC_SSE2,120,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "27",IDC_SS,112,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "28",IDC_HTT,100,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "29",IDC_TM,92,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "30",IDC_RESERVED3,84,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "31",IDC_PBE,76,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,108,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,144,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,180,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,215,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,251,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,287,6,4,11
+    CONTROL         "",IDC_CHILD_FRAME,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,0,17,373,145
+END
+
+IDD_CPUID_BASIC_1_EDX_CAPTIONS_INTEL DIALOGEX 0, 0, 377, 382
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VSCROLL | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_FPU,351,0,8,363,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FPU: FPU87 on-chip ",IDC_FPU_CAPTION,128,352,228,11,
+                    SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,344,0,8,352,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "VME: Virtual 8086 mode enhancement ",IDC_VME_CAPTION,
+                    129,341,218,11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,336,0,8,341,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "DE: Debugging Extensions ",IDC_DE_CAPTION,128,330,211,
+                    11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,328,0,8,330,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE: Page Size Extensions",IDC_PSE_CAPTION,128,319,203,
+                    11,SS_CENTERIMAGE
+    CTEXT           "4",IDC_TSC,316,0,8,319,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "TSC: TimeStamp Counter ",IDC_TSC_CAPTION,112,308,207,11,
+                    SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,308,0,8,308,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MSR: RDMSR/WRMSR support ",IDC_MSR_CAPTION,112,297,199,
+                    11,SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,300,0,8,297,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAE: Physical Address Extensions ",IDC_PAE_CAPTION,112,
+                    286,191,11,SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,292,0,8,286,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCE: Machine Check Exception ",IDC_MCE_CAPTION,112,275,
+                    183,11,SS_CENTERIMAGE
+    CTEXT           "8",IDC_CX8,280,0,8,275,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "GG",IDC_CX8_CAPTION,96,264,187,11,SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,272,0,8,264,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "APIC: APIC on chip ",IDC_APIC_CAPTION,96,253,179,11,
+                    SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,264,0,8,253,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,96,242,171,11,
+                    SS_CENTERIMAGE
+    CTEXT           "11",IDC_SEP,256,0,8,242,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SEP: SYSENTER/SYSEXIT",IDC_SEP_CAPTION,96,231,163,11,
+                    SS_CENTERIMAGE
+    CTEXT           "12",IDC_MTRR,244,0,8,231,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MTRR: Memory Type Range Registers ",IDC_MTRR_CAPTION,80,
+                    220,168,11,SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,236,0,8,221,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PGE: PTE Global Bit ",IDC_PGE_CAPTION,80,209,160,12,
+                    SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,228,0,8,209,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCA: Machine Check Architecture ",IDC_MCA_CAPTION,80,
+                    198,152,11,SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,220,0,8,198,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CMOV: Cond Move/Compare Instruction ",IDC_CMOV_CAPTION,
+                    80,187,144,11,SS_CENTERIMAGE
+    CTEXT           "16",IDC_PAT,208,0,8,187,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAT: Page Attribute Table ",IDC_PAT_CAPTION,48,176,164,
+                    11,SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,0,8,176,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE36: Page Size Extensions ",IDC_PSE36_CAPTION,48,165,
+                    156,11,SS_CENTERIMAGE
+    CTEXT           "18",IDC_PSN,192,0,8,165,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSN: Processor Serial No. ",IDC_PSN_CAPTION,48,154,148,
+                    11,SS_CENTERIMAGE
+    CTEXT           "19",IDC_CFLSH,184,0,8,154,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CFLSH: CFLUSH instruction ",IDC_CFLSH_CAPTION,48,143,
+                    140,11,SS_CENTERIMAGE
+    CTEXT           "20",IDC_RESERVED2,172,0,8,143,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED2_CAPTION,32,132,144,11,
+                    SS_CENTERIMAGE
+    CTEXT           "21",IDC_DS,164,0,8,132,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "DS: Debug Store ",IDC_DS_CAPTION,32,121,136,11,
+                    SS_CENTERIMAGE
+    CTEXT           "22",IDC_ACPI,156,0,8,121,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "ACPI: Power Mgt ",IDC_ACPI_CAPTION,32,110,128,11,
+                    SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,0,8,110,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MMX: MMX Technology ",IDC_MMX_CAPTION,32,99,120,11,
+                    SS_CENTERIMAGE
+    CTEXT           "24",IDC_FXSR,136,0,8,99,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FXSR: FXSAVE/FXRESTORE ",IDC_FXSR_CAPTION,16,88,124,11,
+                    SS_CENTERIMAGE
+    CTEXT           "25",IDC_SSE,128,0,8,88,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SSE: SSE Extensions ",IDC_SSE_CAPTION,16,77,116,11,
+                    SS_CENTERIMAGE
+    CTEXT           "26",IDC_SSE2,120,0,8,77,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SSE2: SSE2 Extensions ",IDC_SSE2_CAPTION,16,66,109,11,
+                    SS_CENTERIMAGE
+    CTEXT           "27",IDC_SS,112,0,8,66,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SS: Self Snoop ",IDC_SS_CAPTION,16,55,101,11,
+                    SS_CENTERIMAGE
+    CTEXT           "28",IDC_HTT,100,0,8,55,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "HTT: Hyperthreading ",IDC_HTT_CAPTION,0,44,105,11,
+                    SS_CENTERIMAGE
+    CTEXT           "29",IDC_TM,92,0,8,44,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "TM: Thermal Monitor ",IDC_TM_CAPTION,0,33,97,11,
+                    SS_CENTERIMAGE
+    CTEXT           "30",IDC_RESERVED3,84,0,8,33,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED3_CAPTION,0,22,89,11,
+                    SS_CENTERIMAGE
+    CTEXT           "31",IDC_PBE,76,0,8,22,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PBE: Pend Brk Enabled ",IDC_PBE_CAPTION,0,11,81,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Intel",IDC_PLATFORM,4,369,16,8
+END
+
+IDD_CPUID_BASIC_2_REGS DIALOGEX 0, 0, 355, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_REGS2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,1,0,354,158
+END
+
+IDD_CPUID_EXTENDED_0 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "EAX: Maximum Value for Extended CPU ID",-1,71,12,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",-1,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",-1,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",-1,71,60,240,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_2_4 DIALOGEX 0, 0, 401, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,58,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EAX: Processor Brand String",IDC_STATIC,79,12,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,58,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EBX: Processor Brand String",IDC_STATIC,79,28,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,58,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ECX: Processor Brand String",IDC_STATIC,79,44,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,58,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EDX: Processor Brand String",IDC_STATIC,79,60,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CPU_TYPENAME,14,85,120,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Processor Brand String (EAX+EBC+ECX+EDX)",IDC_STATIC,
+                    138,84,164,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_BRAND_SEGMENT2,14,115,120,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BRAND_SEGMENT3,135,115,120,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BRAND_SEGMENT4,257,115,120,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "0x8000002",IDC_STATIC,14,105,36,8
+    LTEXT           "0x8000003",IDC_STATIC,135,105,36,8
+    LTEXT           "0x8000004",IDC_STATIC,257,105,36,8
+    EDITTEXT        IDC_BRAND_NAME,14,130,363,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_CPUID_BASIC_0 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "EAX: Maximum Value for Basic CPU ID",IDC_STATIC,63,12,
+                    240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EBX: CPU type name",IDC_STATIC,63,28,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ECX: CPU type name",IDC_STATIC,63,44,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EDX: CPU type name",IDC_STATIC,63,60,240,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CPU_TYPENAME,14,85,120,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "CPU type name (EBX+EDX+ECX)",IDC_STATIC,138,84,164,14,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_5 DIALOGEX 0, 0, 319, 266
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Smallest monitor line size in bytes",
+                    IDC_SMALLEST_MONITOR_LINE_SIZE_CAPTION,160,35,128,14,
+                    SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,7,6,17,11,SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_RESERVED2,32,6,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..0",IDC_SMALLEST_MONITOR_LINE_SIZE,160,6,128,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED2_CAPTION,32,35,128,14,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,223,20,1,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,96,20,1,13
+    CTEXT           "Largest monitor line size in bytes",
+                    IDC_LARGEST_MONITOR_LINE_SIZE_CAPTION,160,85,128,14,
+                    SS_CENTERIMAGE
+    LTEXT           "EBX:",IDC_STATIC,8,56,17,11,SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_RESERVED1,32,56,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..0",IDC_LARGEST_MONITOR_LINE_SIZE,160,56,128,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,32,85,128,14,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,224,70,1,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,96,70,1,13
+    LTEXT           "ECX:",IDC_STATIC,7,106,17,11,SS_CENTERIMAGE
+    CTEXT           "31..2",IDC_RESERVED3,31,106,240,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "0",IDC_MWAIT_ENUMERATION_SUPPORTED,279,106,8,69,
+                    SS_NOTIFY
+    CTEXT           "Reserved",IDC_RESERVED3_CAPTION,31,135,240,14,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,151,120,1,13
+    CTEXT           "1",IDC_INTERRUPTS_AS_BREAK_EVENTS,271,106,8,59,
+                    SS_NOTIFY
+    RTEXT           "Supports treating interrupts as break-events for MWAIT ",
+                    IDC_INTERRUPTS_AS_BREAK_EVENTS_CAPTION,96,154,183,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Enumeration of MONITOR/MWAIT supported",
+                    IDC_MWAIT_ENUMERATION_SUPPORTED_CAPTION,104,165,183,11,
+                    SS_CENTERIMAGE
+    CTEXT           "C0",IDC_C0_CAPTION,257,219,32,14,SS_CENTERIMAGE
+    LTEXT           "EDX:",IDC_STATIC,9,190,17,11,SS_CENTERIMAGE
+    CTEXT           "31..20",IDC_RESERVED4,33,190,96,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "3..0",IDC_C0,257,190,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED4_CAPTION,33,219,96,14,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,210,204,1,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,81,204,1,12
+    CTEXT           "7..4",IDC_C1,225,190,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "11..8",IDC_C2,193,190,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "15..12",IDC_C3,161,190,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "19..16",IDC_C4,129,190,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,274,204,1,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,242,204,1,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,178,204,1,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,145,204,1,13
+    CTEXT           "C1",IDC_C1_CAPTION,225,219,32,14,SS_CENTERIMAGE
+    CTEXT           "C2",IDC_C2_CAPTION,193,219,32,14,SS_CENTERIMAGE
+    CTEXT           "C3",IDC_C3_CAPTION,161,219,32,14,SS_CENTERIMAGE
+    CTEXT           "C4",IDC_C4_CAPTION,129,219,32,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_5_INTEL DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,60,240,14,SS_CENTERIMAGE
+    LTEXT           "Intel",IDC_PLATFORM,2,137,16,8
+END
+
+IDD_CPUID_EXTENDED_7_INTEL DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,60,240,14,SS_CENTERIMAGE
+    LTEXT           "Intel",IDC_PLATFORM,2,137,16,8
+END
+
+IDD_CPUID_EXTENDED_10_AMD DIALOGEX 0, 0, 319, 188
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ECX,15,104,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,104,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,88,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "EBX: NASID: Number of Address Space Identifiers",
+                    IDC_STATIC,71,88,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,120,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,120,62,14,SS_CENTERIMAGE
+    CTEXT           "31..8",IDC_RESERVED1,52,16,192,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_SVM_REV,244,16,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,147,28,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,28,1,30
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,131,57,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "SVM Revision",IDC_SVM_REV_CAPTION,244,57,64,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,15,16,22,14,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,0,179,16,8
+END
+
+IDD_CPUID_EXTENDED_8_INTEL DIALOGEX 0, 0, 319, 188
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EBX,15,84,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,69,85,62,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,101,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,69,102,62,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,117,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,69,117,62,14,SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_RESERVED,52,10,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..8",IDC_VIRTUAL_ADDRESS_BITS,180,9,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_PHYSICAL_ADDRESS_BITS,244,10,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SPIN_PHYSICAL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,278,31,11,
+                    14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,116,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,212,22,1,44
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,22,1,30
+    CTEXT           "Reserved",IDC_RESERVED_CAPTION,52,53,128,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Virtual Address Bits",IDC_VIRTUAL_ADDRESS_BITS_CAPTION,
+                    180,68,64,11,SS_CENTERIMAGE
+    CTEXT           "Physical Address Bits",
+                    IDC_PHYSICAL_ADDRESS_BITS_CAPTION,240,53,72,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,15,10,22,14,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,212,80,1,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,64,1,36
+    CTEXT           "Static",IDC_VIRTUAL_VALUE,180,103,64,8
+    CTEXT           "Static",IDC_PHYSICAL_VALUE,244,103,64,8
+    LTEXT           "Intel",IDC_PLATFORM,3,178,16,8
+END
+
+IDD_CPUID_EXTENDED_1_INTEL DIALOGEX 0, 0, 319, 204
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "EAX: Extended processor signature and Extended Feature bits",
+                    IDC_STATIC,69,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,69,28,240,14,SS_CENTERIMAGE
+    LTEXT           "EDX:",IDC_STATIC,15,118,22,11,SS_CENTERIMAGE
+    CTEXT           "31..30",IDC_RESERVED4,52,118,16,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "19..12",IDC_RESERVED2,148,118,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "10..0",IDC_RESERVED1,220,118,80,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,144,129,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,217,129,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,180,129,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,260,129,1,15
+    CTEXT           "Execute Disable Available ",IDC_EXECUTE_DISABLE_CAPTION,
+                    99,158,90,11,SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED2_CAPTION,148,144,64,11,
+                    SS_CENTERIMAGE
+    CTEXT           "SYSCALL/SYSRET Available (64 bit)",
+                    IDC_SYSCALL_SYSRET_CAPTION,194,158,125,11,SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,220,144,80,11,
+                    SS_CENTERIMAGE
+    CTEXT           "11",IDC_SYSCALL_SYSRET,212,118,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "ECX:",IDC_STATIC,15,55,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_LAHF_SAHF,300,55,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "20",IDC_EXECUTE_DISABLE,140,118,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "28..21",IDC_RESERVED3,76,118,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,108,131,1,15
+    CTEXT           "Reserved",IDC_RESERVED3_CAPTION,76,144,64,11,
+                    SS_CENTERIMAGE
+    CTEXT           "29",IDC_EMT64T,68,118,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,57,131,1,15
+    RTEXT           "Reserved ",IDC_RESERVED4_CAPTION,20,144,37,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,72,131,1,40
+    CTEXT           "EMT64T Available ",IDC_EMT64T_CAPTION,37,173,68,11,
+                    SS_CENTERIMAGE
+    CTEXT           "31..1",IDC_RESERVED5,52,55,248,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,176,67,1,15
+    CTEXT           "Reserved",IDC_RESERVED5_CAPTION,52,83,248,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,303,67,1,29
+    RTEXT           "LAHF/SAHF Available (64 bit) ",IDC_LAHF_SAHF_CAPTION,
+                    180,97,125,11,SS_CENTERIMAGE
+    LTEXT           "Intel",IDC_PLATFORM,1,194,16,8
+END
+
+IDD_CPUID_BASIC_4_0_31 DIALOGEX 0, 0, 386, 223
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "31..26",IDC_CORES_PER_PACKAGE,32,7,48,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "8",IDC_SELF_INITIALIZING,216,7,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "25..14",IDC_THREADS_SHARING,80,7,96,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "4..0",IDC_CACHE_TYPE,248,7,40,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,55,19,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,127,19,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,219,19,1,41
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,267,19,1,16
+    CTEXT           "Cores/pkg - 1",IDC_CORES_PER_PACKAGE_CAPTION,32,31,48,
+                    11,SS_CENTERIMAGE
+    RTEXT           "Self-initializing ",IDC_SELF_INITIALIZING_CAPTION,156,
+                    58,64,11,SS_CENTERIMAGE
+    CTEXT           "Threads sharing cache - 1",IDC_THREADS_SHARING_CAPTION,
+                    80,31,96,11,SS_CENTERIMAGE
+    CTEXT           "Cache Type",IDC_CACHE_TYPE_CAPTION,248,31,40,11,
+                    SS_CENTERIMAGE
+    CTEXT           "?+1",IDC_THREADS_SHARING_VALUE,112,46,31,11
+    CTEXT           "7..5",IDC_CACHE_LEVEL,224,7,24,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,233,19,1,15
+    CTEXT           "Level",IDC_CACHE_LEVEL_CAPTION,224,31,24,11,
+                    SS_CENTERIMAGE
+    CTEXT           "9",IDC_FULLY_ASSOCIATIVE,208,7,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "13..10",IDC_RESERVED,176,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    RTEXT           "Fully Associative ",IDC_FULLY_ASSOCIATIVE_CAPTION,152,
+                    44,60,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,211,19,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,192,19,1,15
+    CTEXT           "Reserved",IDC_RESERVED_CAPTION,176,31,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "?+1",IDC_CORES_PER_PACKAGE_VALUE,32,46,48,11
+    LTEXT           "EAX",IDC_STATIC,7,7,14,11,SS_CENTERIMAGE
+    CTEXT           "31..22",IDC_WAYS_OF_ASSOCIATIVITY,32,81,80,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "EBX",IDC_STATIC,7,81,14,11,SS_CENTERIMAGE
+    CTEXT           "Ways of associativity-1",
+                    IDC_WAYS_OF_ASSOCIATIVITY_CAPTION,32,106,80,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,71,93,1,15
+    CTEXT           "21..12",IDC_PHYSICAL_LINE_PARTITIONS,112,81,80,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "Physical line partitions-1",
+                    IDC_PHYSICAL_LINE_PARTITIONS_CAPTION,112,106,80,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,151,93,1,14
+    CTEXT           "11..0",IDC_SYSTEM_COHERENCY_LINE_SIZE,192,81,96,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,239,93,1,14
+    CTEXT           "System coherency line size-1",
+                    IDC_SYSTEM_COHERENCY_LINE_SIZE_CAPTION,192,106,96,11,
+                    SS_CENTERIMAGE
+    CTEXT           "31..0",IDC_NUMBER_OF_SETS,32,139,256,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "ECX",IDC_STATIC,8,139,14,11,SS_CENTERIMAGE
+    CTEXT           "Number of Sets - 1",IDC_NUMBER_OF_SETS_CAPTION,32,164,
+                    256,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,159,150,1,15
+    CTEXT           "?+1",IDC_WAYS_OF_ASSOCIATiVITY_VALUE,32,120,80,11
+    CTEXT           "?+1",IDC_PHYSICAL_LINE_PARTITIONS_VALUE,112,120,80,11
+    CTEXT           "?+1",IDC_SYSTEM_COHERENCY_LINE_SIZE_VALUE,192,120,96,11
+    CTEXT           "?+1",IDC_NUMBER_OF_SETS_VALUE,32,175,256,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EDX Reserved",IDC_STATIC,8,190,93,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_CACHE_TYPE_VALUE,248,58,135,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,267,42,1,16
+END
+
+IDD_BLOCK_DIAGRAM DIALOGEX 0, 0, 452, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "CPU",IDC_CPU_REGION,16,26,121,93
+    LTEXT           "Gap1",IDC_GAP1,15,134,12,49,NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",IDC_CPU_CORE_REGION,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,29,134,17,49
+    LTEXT           "Gap1",IDC_GAP2,49,134,12,49,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "L1",IDC_L1_CACHE_REGION,64,134,36,49,SS_NOTIFY
+    CONTROL         "",IDC_PREFETCH,"Static",SS_BLACKRECT | SS_NOTIFY,72,115,
+                    36,18
+    LTEXT           "TLB",IDC_TLB_REGION,143,26,36,157,SS_NOTIFY
+    LTEXT           "L2",IDC_L2_CACHE_REGION,183,26,36,157,SS_NOTIFY
+    LTEXT           "L3",IDC_L3_CACHE_REGION,222,26,36,157,SS_NOTIFY | 
+                    WS_BORDER
+    CONTROL         "",IDC_PHYSICAL_ADDRESS_LINES_REGION,"Static",
+                    SS_BLACKRECT | SS_NOTIFY,261,26,36,157
+    LTEXT           "Memory Region",IDC_MEMORY_REGION,302,26,93,157,
+                    SS_NOTIFY | WS_BORDER
+    CONTROL         "",IDC_LOGICAL_ADDRESS_LINES_REGION,"Static",
+                    SS_BLACKRECT | SS_NOTIFY,111,143,36,49
+END
+
+IDD_CPUID_BASIC_7 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,60,240,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_8 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,60,240,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_9 DIALOGEX 0, 0, 319, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,60,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,60,240,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_1_EAX_AMD DIALOGEX 0, 0, 355, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "31..28",IDC_RESERVED_32_28,16,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "27..20",IDC_EXTENDED_CPU_ID,48,7,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "19..16",IDC_EXTENDED_MODEL_ID,112,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "13..12",IDC_RESERVED_15_12,144,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "11..8",IDC_FAMILY_ID,176,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..4",IDC_MODEL,208,7,32,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "3..0",IDC_STEPPING_ID,240,7,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,31,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,79,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,127,18,1,63
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,159,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,193,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,223,18,1,26
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,255,18,1,26
+    CTEXT           "Extended Model ID",IDC_EXTENDED_MODEL_ID_CAPTION,111,81,
+                    32,19
+    CTEXT           "Reserved",IDC_RESERVED_15_12_CAPTION,144,44,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Family ID",IDC_FAMILY_ID_CAPTION,176,44,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Model",IDC_MODEL_CAPTION,207,44,32,11,SS_CENTERIMAGE
+    CTEXT           "Stepping ID",IDC_STEPPING_ID_CAPTION,239,44,32,21
+    CTEXT           "Reserved",IDC_RESERVED_32_28_CAPTION,15,44,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Extended Family ID",IDC_EXTENDED_CPU_ID_CAPTION,47,44,
+                    64,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_EXTENDED_FAMILY_1,"Static",SS_ETCHEDVERT,193,54,1,
+                    65
+    CONTROL         "",IDC_EXTENDED_FAMILY_2,"Static",SS_ETCHEDVERT,79,54,1,
+                    8
+    CONTROL         "",IDC_EXTENDED_FAMILY_3,"Static",SS_ETCHEDHORZ,79,61,
+                    115,1
+    EDITTEXT        IDC_COMPUTED_FAMILY_ID,193,119,57,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Computed Family ID",IDC_COMPUTED_FAMILY_ID_CAPTION,196,
+                    106,74,11
+    EDITTEXT        IDC_COMPUTED_MODEL,223,84,57,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Computed Model",IDC_COMPUTED_MODEL_CAPTION,227,72,74,11
+    CONTROL         "",IDC_COMPUTED_MODEL_1,"Static",SS_ETCHEDVERT,223,55,1,
+                    30
+    CONTROL         "",IDC_COMPUTED_MODEL_2,"Static",SS_ETCHEDHORZ,146,90,78,
+                    1
+    LTEXT           "AMD",IDC_PLATFORM,0,150,16,8
+END
+
+IDD_CPUID_BASIC_1_ECX_AMD DIALOGEX 0, 0, 355, 195
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_SSE3,274,6,8,188,SS_NOTIFY
+    CTEXT           "3..1",IDC_RESERVED1,250,6,24,177,SS_NOTIFY
+    CTEXT           "7..4",IDC_RESERVED2,214,6,32,150,SS_NOTIFY
+    CTEXT           "11..8",IDC_RESERVED3,177,6,33,102,SS_NOTIFY
+    CTEXT           "13",IDC_CMPXCHG16B,158,6,8,44,SS_NOTIFY
+    CTEXT           "31..14",IDC_RESERVED6a,148,7,8,28,SS_NOTIFY
+    CTEXT           "31..14",IDC_RESERVED6,12,7,144,11,SS_NOTIFY
+    RTEXT           "Reserved ",IDC_RESERVED6_CAPTION,52,28,104,11,
+                    SS_CENTERIMAGE
+    RTEXT           "CMPXCHG16B ",IDC_CMPXCHG16B_CAPTION,52,39,112,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED5_CAPTION,52,50,115,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved",IDC_RESERVED3_CAPTION,68,98,127,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED2_CAPTION,84,146,140,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,100,172,165,11,
+                    SS_CENTERIMAGE
+    RTEXT           "SSE3 Extensions implemented ",IDC_SSE3_CAPTION,100,183,
+                    177,11,SS_CENTERIMAGE
+    CTEXT           "12",IDC_RESERVED5,166,6,8,55,SS_NOTIFY
+    LTEXT           "AMD",IDC_PLATFORM,0,187,16,8
+END
+
+IDD_CPUID_BASIC_1_EDX_AMD DIALOGEX 0, 0, 373, 163
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_FPU,351,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,343,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,335,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,327,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,323,6,4,11
+    CTEXT           "4",IDC_TSC,315,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,307,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,299,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,291,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "8",IDC_CX8,279,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,271,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,263,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "11",IDC_SEP,255,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "12",IDC_MTRR,243,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,235,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,227,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,219,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "16",IDC_PAT,207,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "18",IDC_PSN,192,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "19",IDC_CFLSH,184,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "22..20",IDC_RESERVED2,156,6,24,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "24",IDC_FXSR,136,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "25",IDC_SSE,128,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "26",IDC_SSE2,120,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "27",IDC_SS,112,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "28",IDC_HTT,100,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "31..29",IDC_RESERVED3,76,6,24,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,108,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,144,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,180,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,215,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,251,6,4,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,287,6,4,11
+    CONTROL         "",IDC_CHILD_FRAME,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,0,17,373,145
+END
+
+IDD_CPUID_BASIC_1_EDX_CAPTIONS_AMD DIALOGEX 0, 0, 377, 382
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VSCROLL | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_FPU,351,0,8,340,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FPU: FPU87 on-chip ",IDC_FPU_CAPTION,128,330,228,11,
+                    SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,344,0,8,329,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "VME: Virtual 8086 mode enhancement ",IDC_VME_CAPTION,
+                    129,319,218,11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,336,0,8,319,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "DE: Debugging Extensions ",IDC_DE_CAPTION,128,308,211,
+                    11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,328,0,8,308,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE: Page Size Extensions",IDC_PSE_CAPTION,128,297,203,
+                    11,SS_CENTERIMAGE
+    CTEXT           "4",IDC_TSC,316,0,8,297,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "TSC: TimeStamp Counter ",IDC_TSC_CAPTION,112,286,207,11,
+                    SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,308,0,8,286,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MSR: RDMSR/WRMSR support ",IDC_MSR_CAPTION,112,275,199,
+                    11,SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,300,0,8,275,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAE: Physical Address Extensions ",IDC_PAE_CAPTION,112,
+                    264,191,11,SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,292,0,8,264,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCE: Machine Check Exception ",IDC_MCE_CAPTION,112,253,
+                    183,11,SS_CENTERIMAGE
+    CTEXT           "8",IDC_CX8,280,0,8,253,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CX8: CMXCH8B ",IDC_CX8_CAPTION,96,242,187,11,
+                    SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,272,0,8,242,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "APIC: APIC on chip ",IDC_APIC_CAPTION,96,231,179,11,
+                    SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,264,0,8,231,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,96,220,171,11,
+                    SS_CENTERIMAGE
+    CTEXT           "11",IDC_SEP,256,0,8,220,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SEP: SYSENTER/SYSEXIT",IDC_SEP_CAPTION,96,209,163,11,
+                    SS_CENTERIMAGE
+    CTEXT           "12",IDC_MTRR,244,0,8,208,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MTRR: Memory Type Range Registers ",IDC_MTRR_CAPTION,80,
+                    198,168,11,SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,236,0,8,200,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PGE: PTE Global Bit ",IDC_PGE_CAPTION,80,187,160,12,
+                    SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,228,0,8,186,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCA: Machine Check Architecture ",IDC_MCA_CAPTION,80,
+                    176,152,11,SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,220,0,8,177,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CMOV: Cond Move/Compare Instruction ",IDC_CMOV_CAPTION,
+                    80,165,144,11,SS_CENTERIMAGE
+    CTEXT           "16",IDC_PAT,208,0,8,165,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAT: Page Attribute Table ",IDC_PAT_CAPTION,48,154,164,
+                    11,SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,0,8,154,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE36: Page Size Extensions ",IDC_PSE36_CAPTION,48,143,
+                    156,11,SS_CENTERIMAGE
+    CTEXT           "18",IDC_RESERVED5,192,0,8,143,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved",IDC_RESERVED5_CAPTION,48,132,148,11,
+                    SS_CENTERIMAGE
+    CTEXT           "19",IDC_CFLSH,184,0,8,132,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CFLSH: CFLUSH instruction ",IDC_CFLSH_CAPTION,48,121,
+                    140,11,SS_CENTERIMAGE
+    CTEXT           "22..20",IDC_RESERVED2,156,0,24,121,SS_NOTIFY | NOT 
+                    WS_GROUP
+    RTEXT           "Reserved",IDC_RESERVED2_CAPTION,32,110,146,11,
+                    SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,0,8,110,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MMX: MMX Technology ",IDC_MMX_CAPTION,32,99,120,11,
+                    SS_CENTERIMAGE
+    CTEXT           "24",IDC_FXSR,136,0,8,99,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FXSR: FXSAVE/FXRESTORE ",IDC_FXSR_CAPTION,16,88,124,11,
+                    SS_CENTERIMAGE
+    CTEXT           "25",IDC_SSE,128,0,8,88,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SSE: SSE Extensions ",IDC_SSE_CAPTION,16,77,116,11,
+                    SS_CENTERIMAGE
+    CTEXT           "26",IDC_SSE2,120,0,8,77,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SSE2: SSE2 Extensions ",IDC_SSE2_CAPTION,16,66,109,11,
+                    SS_CENTERIMAGE
+    CTEXT           "27",IDC_RESERVED4,112,0,8,66,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved",IDC_RESERVED4_CAPTION,16,55,101,11,
+                    SS_CENTERIMAGE
+    CTEXT           "28",IDC_HTT,100,0,8,55,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "HTT: Hyperthreading ",IDC_HTT_CAPTION,0,44,105,11,
+                    SS_CENTERIMAGE
+    CTEXT           "31..29",IDC_RESERVED3,76,0,24,44,SS_NOTIFY | NOT 
+                    WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED3_CAPTION,0,33,89,11,
+                    SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,4,369,16,8
+END
+
+IDD_CPUID_EXTENDED_1_EAX_AMD DIALOGEX 0, 0, 185, 77
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_CPUID_EXTENDED_1_EBX_AMD DIALOGEX 0, 0, 319, 234
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "EBX:",IDC_STATIC,15,6,22,11,SS_CENTERIMAGE
+    CTEXT           "15..0",IDC_BRANDID,180,6,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_RESERVED,52,6,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,115,18,1,17
+    CTEXT           "Reserved",IDC_RESERVED_CAPTION,52,37,128,11,
+                    SS_CENTERIMAGE
+    CTEXT           "BrandID ",IDC_BRANDID_CAPTION,180,37,128,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,244,18,1,16
+    LTEXT           "AMD",IDC_PLATFORM,0,223,16,8
+END
+
+IDD_CPUID_EXTENDED_1_ECX_AMD DIALOGEX 0, 0, 319, 122
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "ECX:",-1,15,15,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_LAHF_SAHF,300,15,8,86,SS_NOTIFY
+    CTEXT           "31..5",IDC_RESERVED5,52,15,216,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,159,27,1,7
+    CTEXT           "Reserved",IDC_RESERVED5_CAPTION,52,35,216,11,
+                    SS_CENTERIMAGE
+    RTEXT           "LAHF/SAHF Available (64 bit) ",IDC_LAHF_SAHF_CAPTION,
+                    144,90,160,11,SS_CENTERIMAGE
+    CTEXT           "1",IDC_CMP_LEGACY,292,15,8,72,SS_NOTIFY
+    RTEXT           "CmpLegacy: Core multiprocessor legacy mode ",
+                    IDC_CMP_LEGACY_CAPTION,144,79,152,11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_SVM,284,15,8,61,SS_NOTIFY
+    RTEXT           "SVM: Secure Virtual Machine ",IDC_SVM_CAPTION,144,68,
+                    144,11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_RESERVED6,276,15,8,51,SS_NOTIFY
+    RTEXT           "Reserved ",IDC_RESERVED6_CAPTION,144,57,136,11,
+                    SS_CENTERIMAGE
+    CTEXT           "4",IDC_ALT_MOV_CR8,268,15,8,39,SS_NOTIFY
+    RTEXT           "AltMovCR8: LOCK MOV CR0 == MOV CR8 ",
+                    IDC_ALT_MOV_CR8_CAPTION,112,47,158,11,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,1,111,16,8
+END
+
+IDD_CPUID_EXTENDED_1_EDX_AMD DIALOGEX 0, 0, 373, 234
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "0",IDC_FPU,351,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,343,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,335,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,327,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,323,6,4,11
+    CTEXT           "4",IDC_TSC,315,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,307,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,299,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,291,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,287,6,4,11
+    CTEXT           "8",IDC_CX8,279,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,271,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,263,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "11",IDC_SYSCALL_SYSRET,255,6,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,251,6,4,11
+    CTEXT           "12",IDC_MTRR,243,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,235,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,227,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,219,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,215,6,4,11
+    CTEXT           "16",IDC_PAT,207,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "19..18",IDC_RESERVED2,184,6,16,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,180,6,4,11
+    CTEXT           "20",IDC_EXECUTE_DISABLE,172,6,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "21",IDC_RESERVED3,164,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "22",IDC_MMX_EXT,156,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,144,6,4,11
+    CTEXT           "24",IDC_FXSR,136,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "25",IDC_FFXSR,128,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "26",IDC_RESERVED4,120,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "27",IDC_RDTSCP,112,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,108,6,4,11
+    CTEXT           "28",IDC_RESERVED5,100,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "29",IDC_LM,92,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "30",IDC_3DNOW_EXT,84,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "31",IDC_3DNOW,76,6,8,11,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_CHILD_FRAME,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,0,17,373,145
+END
+
+IDD_CPUID_EXTENDED_1_EDX_CAPTIONS_AMD DIALOGEX 0, 0, 377, 382
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VSCROLL | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "0",IDC_FPU,351,0,8,363,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FPU: FPU87 on-chip ",IDC_FPU_CAPTION,128,352,228,11,
+                    SS_CENTERIMAGE
+    CTEXT           "1",IDC_VME,344,0,8,352,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "VME: Virtual 8086 mode enhancement ",IDC_VME_CAPTION,
+                    129,341,218,11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_DE,336,0,8,341,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "DE: Debugging Extensions ",IDC_DE_CAPTION,128,330,211,
+                    11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_PSE,328,0,8,330,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE: Page Size Extensions",IDC_PSE_CAPTION,128,319,203,
+                    11,SS_CENTERIMAGE
+    CTEXT           "4",IDC_TSC,316,0,8,319,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "TSC: TimeStamp Counter ",IDC_TSC_CAPTION,112,308,207,11,
+                    SS_CENTERIMAGE
+    CTEXT           "5",IDC_MSR,308,0,8,308,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MSR: RDMSR/WRMSR support ",IDC_MSR_CAPTION,112,297,199,
+                    11,SS_CENTERIMAGE
+    CTEXT           "6",IDC_PAE,300,0,8,297,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAE: Physical Address Extensions ",IDC_PAE_CAPTION,112,
+                    286,191,11,SS_CENTERIMAGE
+    CTEXT           "7",IDC_MCE,292,0,8,286,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCE: Machine Check Exception ",IDC_MCE_CAPTION,112,275,
+                    183,11,SS_CENTERIMAGE
+    CTEXT           "8",IDC_CX8,280,0,8,275,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CMPXCHG8B available",IDC_CX8_CAPTION,96,264,187,11,
+                    SS_CENTERIMAGE
+    CTEXT           "9",IDC_APIC,272,0,8,264,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "APIC: APIC on chip ",IDC_APIC_CAPTION,96,253,179,11,
+                    SS_CENTERIMAGE
+    CTEXT           "10",IDC_RESERVED1,264,0,8,253,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,96,242,171,11,
+                    SS_CENTERIMAGE
+    CTEXT           "11",IDC_SYSCALL_SYSRET,256,0,8,242,SS_NOTIFY | NOT 
+                    WS_GROUP
+    RTEXT           "SysCallSysRet: SYSCALL/SYSRET available",
+                    IDC_SYSCALL_SYSRET_CAPTION,96,231,163,11,SS_CENTERIMAGE
+    CTEXT           "12",IDC_MTRR,244,0,8,231,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MTRR: Memory Type Range Registers ",IDC_MTRR_CAPTION,80,
+                    220,168,11,SS_CENTERIMAGE
+    CTEXT           "13",IDC_PGE,236,0,8,221,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PGE: PTE Global Bit ",IDC_PGE_CAPTION,80,209,160,12,
+                    SS_CENTERIMAGE
+    CTEXT           "14",IDC_MCA,228,0,8,209,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MCA: Machine Check Architecture ",IDC_MCA_CAPTION,80,
+                    198,152,11,SS_CENTERIMAGE
+    CTEXT           "15",IDC_CMOV,220,0,8,198,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CMOV: Cond Move/Compare Instruction ",IDC_CMOV_CAPTION,
+                    80,187,144,11,SS_CENTERIMAGE
+    CTEXT           "16",IDC_PAT,208,0,8,187,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PAT: Page Attribute Table ",IDC_PAT_CAPTION,48,176,164,
+                    11,SS_CENTERIMAGE
+    CTEXT           "17",IDC_PSE36,200,0,8,176,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PSE36: Page Size Extensions ",IDC_PSE36_CAPTION,48,165,
+                    156,11,SS_CENTERIMAGE
+    CTEXT           "19..18",IDC_RESERVED2,184,0,16,165,SS_NOTIFY | NOT 
+                    WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED2_CAPTION,48,154,148,11,
+                    SS_CENTERIMAGE
+    CTEXT           "20",IDC_EXECUTE_DISABLE,172,0,8,143,SS_NOTIFY | NOT 
+                    WS_GROUP
+    RTEXT           "NX: No-execute page protection",
+                    IDC_EXECUTE_DISABLE_CAPTION,32,132,144,11,SS_CENTERIMAGE
+    CTEXT           "21",IDC_RESERVED3,164,0,8,132,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED3_CAPTION,32,121,136,11,
+                    SS_CENTERIMAGE
+    CTEXT           "22",IDC_MMX_EXT,156,0,8,121,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MMXExt: AMD MMX extensions",IDC_MMX_EXT_CAPTION,32,110,
+                    128,11,SS_CENTERIMAGE
+    CTEXT           "23",IDC_MMX,148,0,8,110,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "MMX: MMX Technology ",IDC_MMX_CAPTION,32,99,120,11,
+                    SS_CENTERIMAGE
+    CTEXT           "24",IDC_FXSR,136,0,8,99,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FXSR: FXSAVE/FXRESTORE ",IDC_FXSR_CAPTION,16,88,124,11,
+                    SS_CENTERIMAGE
+    CTEXT           "25",IDC_FFXSR,128,0,8,88,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FFXSR: FXSAVE/FXRSTOR opts",IDC_FFXSR_CAPTION,16,77,116,
+                    11,SS_CENTERIMAGE
+    CTEXT           "26",IDC_RESERVED4,120,0,8,77,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED4_CAPTION,16,66,109,11,
+                    SS_CENTERIMAGE
+    CTEXT           "27",IDC_RDTSCP,112,0,8,66,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "RDTSCP: RDTSCP instruction",IDC_RDTSCP_CAPTION,16,55,
+                    101,11,SS_CENTERIMAGE
+    CTEXT           "28",IDC_RESERVED5,100,0,8,55,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved ",IDC_RESERVED5_CAPTION,0,44,105,11,
+                    SS_CENTERIMAGE
+    CTEXT           "29",IDC_LM,92,0,8,44,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "LM: Long mode",IDC_LM_CAPTION,0,33,97,11,SS_CENTERIMAGE
+    CTEXT           "30",IDC_3DNOW_EXT,84,0,8,33,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "3DNowExt: AMD extensions ",IDC_3DNOW_EXT_CAPTION,0,22,
+                    89,11,SS_CENTERIMAGE
+    CTEXT           "31",IDC_3DNOW,76,0,8,22,SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "3DNow: 3DNow!(tm) ",IDC_3DNOW_CAPTION,0,11,81,11,
+                    SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,4,369,16,8
+END
+
+IDD_CPUID_EXTENDED_5_AMD DIALOGEX 0, 0, 377, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "31..24",IDC_31_24,16,23,32,56,SS_NOTIFY
+    CTEXT           "15..8",IDC_15_8,80,22,32,34,SS_NOTIFY
+    CTEXT           "23..16",IDC_23_16,48,22,32,45,SS_NOTIFY
+    CTEXT           "7..0",IDC_7_0,112,23,32,23,SS_NOTIFY
+    LTEXT           "Static",IDC_7_0_CAPTION,112,45,128,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_8_CAPTION,80,56,160,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_23_16_CAPTION,48,67,192,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_24_CAPTION,16,78,224,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_CAPTION,16,6,128,11,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,1,138,16,8
+    LTEXT           "Static",IDC_7_0_EXPLANATION,240,45,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_8_EXPLANATION,240,56,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_23_16_EXPLANATION,240,67,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_24_EXPLANATION,240,78,128,11,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_6 DIALOGEX 0, 0, 319, 222
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDX,15,199,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,199,62,14,SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,15,10,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_SENSOR_SUPPORTED,300,10,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "31..1",IDC_RESERVED1,52,10,248,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,176,22,1,15
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,52,38,248,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,303,22,1,29
+    RTEXT           "Digital Temperature Sensor supported",
+                    IDC_SENSOR_SUPPORTED_CAPTION,180,52,125,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EBX:",IDC_STATIC,15,67,22,11,SS_CENTERIMAGE
+    CTEXT           "3..0",IDC_INTERRUPT_THRESHOLDS,275,67,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "31..4",IDC_RESERVED2,51,67,224,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,163,80,1,15
+    CTEXT           "Reserved",IDC_RESERVED2_CAPTION,51,96,224,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,291,80,1,29
+    RTEXT           "Number of interrupt thresholds",
+                    IDC_INTERRUPT_THRESHOLDS_CAPTION,167,110,125,11,
+                    SS_CENTERIMAGE
+    LTEXT           "ECX:",IDC_STATIC,15,127,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_ACNT_MCNT,300,127,8,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "31..1",IDC_RESERVED3,52,127,248,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,176,139,1,15
+    CTEXT           "Reserved",IDC_RESERVED3_CAPTION,52,155,248,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,303,139,1,29
+    RTEXT           "ACNT/MCNT % frequency",IDC_ACNT_MCNT_CAPTION,180,169,
+                    125,11,SS_CENTERIMAGE
+END
+
+IDD_CPUID_BASIC_10 DIALOGEX 0, 0, 319, 249
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ECX,80,180,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,15,180,62,14,SS_CENTERIMAGE
+    CTEXT           "31..24",IDC_EBX_VECTOR_LENGTH,52,10,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..8",IDC_COUNTERS_PER_PROCESSOR,180,9,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_VERSION_ID,244,10,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,84,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,212,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,22,1,15
+    CTEXT           "EBX Vector Length",IDC_EBX_VECTOR_LENGTH_CAPTION,52,51,
+                    64,11,SS_CENTERIMAGE
+    CTEXT           "Counters per processor",
+                    IDC_COUNTERS_PER_PROCESSOR_CAPTION,174,51,76,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Version ID",IDC_VERSION_ID_CAPTION,244,36,64,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,15,10,22,14,SS_CENTERIMAGE
+    CTEXT           "23..16",IDC_GP_COUNTER_WIDTH,116,9,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,148,22,1,15
+    CTEXT           "GP Counter width",IDC_GP_COUNTER_WIDTH_CAPTION,116,36,
+                    64,11,SS_CENTERIMAGE
+    LTEXT           "EBX:",IDC_STATIC,15,71,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_CORE_CYCLE_NA,300,71,8,107,SS_NOTIFY
+    CTEXT           "31..7",IDC_RESERVED1,52,71,200,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,152,83,1,7
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,52,91,200,11,
+                    SS_CENTERIMAGE
+    RTEXT           "Core cycle event not available",
+                    IDC_CORE_CYCLE_NA_CAPTION,140,167,164,11,SS_CENTERIMAGE
+    CTEXT           "1",IDC_INSTRUCTION_RETIRED_NA,292,71,8,94,SS_NOTIFY
+    RTEXT           "Instruction retired event not available",
+                    IDC_INSTRUCTION_RETIRED_NA_CAPTION,140,156,153,11,
+                    SS_CENTERIMAGE
+    CTEXT           "2",IDC_REFERENCE_CYCLES_NA,284,71,8,83,SS_NOTIFY
+    RTEXT           "Reference cyles not available",
+                    IDC_REFERENCE_CYCLES_NA_CAPTION,140,145,148,11,
+                    SS_CENTERIMAGE
+    CTEXT           "3",IDC_LAST_LEVEL_CACHE_REF_NA,276,71,8,73,SS_NOTIFY
+    RTEXT           "Last-reference cache event not available",
+                    IDC_LAST_LEVEL_CACHE_REF_NA_CAPTION,140,134,140,11,
+                    SS_CENTERIMAGE
+    CTEXT           "4",IDC_LAST_LEVEL_CACHE_MISS_NA,268,71,8,60,SS_NOTIFY
+    RTEXT           "Last-reference cache miss event not available",
+                    IDC_LAST_LEVEL_CACHE_MISS_NA_CAPTION,108,124,162,11,
+                    SS_CENTERIMAGE
+    CTEXT           "6",IDC_BRANCH_MISPREDICT_NA,252,71,8,39,SS_NOTIFY
+    RTEXT           "Branch mispredict retired event not available",
+                    IDC_BRANCH_MISPREDICT_NA_CAPTION,108,102,146,11,
+                    SS_CENTERIMAGE
+    CTEXT           "5",IDC_BRANCH_RETIRED_NA,260,71,8,49,SS_NOTIFY
+    RTEXT           "Branch instruction retired event not available",
+                    IDC_BRANCH_RETIRED_NA_CAPTION,108,113,155,11,
+                    SS_CENTERIMAGE
+    CTEXT           "31..13",IDC_RESERVED2,51,203,144,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "12..5",IDC_COUNTER_WIDTH,202,203,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "4..0",IDC_FIXED_FUNCTION_COUNTERS,267,203,40,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,123,216,1,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,234,216,1,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,288,216,1,20
+    RTEXT           "Reserved ",IDC_RESERVED2_CAPTION,60,235,64,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Counters per processor",IDC_COUNTER_WIDTH_CAPTION,159,
+                    224,76,11,SS_CENTERIMAGE
+    RTEXT           "Fixed-function counters",
+                    IDC_FIXED_FUNCTION_COUNTERS_CAPTION,209,236,80,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EDX:",IDC_STATIC,15,203,22,14,SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_6_EABX_AMD DIALOGEX 0, 0, 377, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "31..28",IDC_31_28,16,23,16,56,SS_NOTIFY
+    CTEXT           "15..12",IDC_15_12,80,22,16,34,SS_NOTIFY
+    CTEXT           "27..16",IDC_27_16,32,22,48,45,SS_NOTIFY
+    CTEXT           "11..0",IDC_11_0,96,23,48,23,SS_NOTIFY
+    LTEXT           "Static",IDC_11_0_CAPTION,96,45,144,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_12_CAPTION,80,56,160,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_27_16_CAPTION,32,67,208,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_28_CAPTION,16,78,224,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_CAPTION,16,6,128,11,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,1,138,16,8
+    LTEXT           "Static",IDC_11_0_EXPLANATION,240,45,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_12_EXPLANATION,240,56,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_27_16_EXPLANATION,240,67,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_28_EXPLANATION,240,78,128,11,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_6_ECX_AMD DIALOGEX 0, 0, 377, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "31..16",IDC_31_16,16,23,64,56,SS_NOTIFY
+    CTEXT           "15..12",IDC_15_12,80,22,16,45,SS_NOTIFY
+    CTEXT           "11..8",IDC_11_8,96,22,16,34,SS_NOTIFY
+    CTEXT           "7..0",IDC_7_0,112,23,31,23,SS_NOTIFY
+    LTEXT           "Static",IDC_7_0_CAPTION,112,45,128,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_11_8_CAPTION,96,56,144,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_12_CAPTION,80,67,160,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_16_CAPTION,16,78,224,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_CAPTION,16,6,128,11,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,1,138,16,8
+    LTEXT           "Static",IDC_7_0_EXPLANATION,240,45,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_11_8_EXPLANATION,240,56,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_15_12_EXPLANATION,240,67,128,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_31_16_EXPLANATION,240,78,128,11,
+                    SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_7_AMD DIALOGEX 0, 0, 319, 204
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ECX,15,44,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "ECX: Reserved",IDC_STATIC,71,44,240,14,SS_CENTERIMAGE
+    LTEXT           "AMD",IDC_PLATFORM,0,191,16,8
+    LTEXT           "EDX:",IDC_STATIC,15,71,22,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_TS,308,71,8,119,SS_NOTIFY
+    CTEXT           "31..9",IDC_RESERVED2,52,71,184,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,143,83,1,7
+    CTEXT           "Reserved",IDC_RESERVED2_CAPTION,52,91,184,11,
+                    SS_CENTERIMAGE
+    RTEXT           "TS: Temperature Sensor",IDC_TS_CAPTION,148,178,164,11,
+                    SS_CENTERIMAGE
+    CTEXT           "1",IDC_FID,300,71,8,105,SS_NOTIFY
+    RTEXT           "FID: Frequency ID control",IDC_FID_CAPTION,148,167,153,
+                    11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_VID,292,71,8,94,SS_NOTIFY
+    RTEXT           "VID: Voltage ID control supported",IDC_VID_CAPTION,148,
+                    156,148,11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_TTP,284,71,8,84,SS_NOTIFY
+    RTEXT           "TTP: ThermTrip supported",IDC_TTP_CAPTION,148,145,140,
+                    11,SS_CENTERIMAGE
+    CTEXT           "4",IDC_TM,272,71,8,71,SS_NOTIFY
+    RTEXT           "TM: Hardware thermal control supported",IDC_TM_CAPTION,
+                    112,135,162,11,SS_CENTERIMAGE
+    CTEXT           "7..6",IDC_RESERVED1,248,71,16,50,SS_NOTIFY
+    RTEXT           "Reserved ",IDC_RESERVED1_CAPTION,112,113,146,11,
+                    SS_CENTERIMAGE
+    CTEXT           "5",IDC_STC,264,71,8,60,SS_NOTIFY
+    RTEXT           "STC: Software Thermal Control supported",
+                    IDC_STC_CAPTION,112,124,155,11,SS_CENTERIMAGE
+    CTEXT           "8",IDC_TSC_INVARIANT,236,71,8,39,SS_NOTIFY
+    RTEXT           "TscInvariant: TSC rate ensured",
+                    IDC_TSC_INVARIANT_CAPTION,76,102,162,11,SS_CENTERIMAGE
+END
+
+IDD_CPUID_EXTENDED_8_AMD DIALOGEX 0, 0, 319, 212
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EBX,15,84,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,69,85,62,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,186,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,69,186,62,14,SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_RESERVED,52,10,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..8",IDC_VIRTUAL_ADDRESS_BITS,180,9,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_PHYSICAL_ADDRESS_BITS,244,10,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SPIN_PHYSICAL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,278,21,11,
+                    14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,116,22,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,212,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,22,1,15
+    CTEXT           "Reserved",IDC_RESERVED_CAPTION,52,38,128,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Virtual Address Bits",IDC_VIRTUAL_ADDRESS_BITS_CAPTION,
+                    180,53,64,11,SS_CENTERIMAGE
+    CTEXT           "Physical Address Bits",
+                    IDC_PHYSICAL_ADDRESS_BITS_CAPTION,240,38,72,11,
+                    SS_CENTERIMAGE
+    LTEXT           "EAX:",IDC_STATIC,15,10,22,14,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,212,65,1,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,49,1,26
+    CTEXT           "Static",IDC_VIRTUAL_VALUE,180,79,64,8
+    CTEXT           "Static",IDC_PHYSICAL_VALUE,244,79,64,8
+    LTEXT           "AMD",IDC_PLATFORM,0,204,16,8
+    CTEXT           "31..16",IDC_RESERVED3,51,109,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..12",IDC_APIC_ID_CORE_ID_SIZE,179,109,32,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_NCORES,243,109,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "ECX:",IDC_STATIC,15,109,22,14,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,116,122,1,15
+    CTEXT           "Reserved",IDC_RESERVED3_CAPTION,52,138,128,11,
+                    SS_CENTERIMAGE
+    CTEXT           "APIC Id Core Id size",IDC_APIC_ID_CORE_ID_SIZE_CAPTION,
+                    164,151,64,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,195,122,1,30
+    CTEXT           "11..8",IDC_RESERVED2,211,109,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,228,122,1,15
+    CTEXT           "Reserved",IDC_RESERVED2_CAPTION,211,138,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "CPU Cores - 1",IDC_NCORES_CAPTION,243,151,64,11,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,275,122,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,195,164,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,275,164,1,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,195,178,22,2
+    EDITTEXT        IDC_ACTUAL_CORES,216,171,39,14,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,255,178,22,2
+    LTEXT           "(Actual CPU Cores)",IDC_STATIC,204,189,62,8
+END
+
+IDD_CPUID_EXTENDED_6_INTEL DIALOGEX 0, 0, 319, 188
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EAX,15,12,48,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "EAX: Reserved",IDC_STATIC,71,12,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EBX,15,28,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EBX: Reserved",IDC_STATIC,71,28,240,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDX,15,158,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE
+    LTEXT           "EDX: Reserved",IDC_STATIC,71,158,62,14,SS_CENTERIMAGE
+    CTEXT           "31..16",IDC_CACHE_SIZE,52,55,128,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "15..12",IDC_L2_ASSOCIATIVITY,180,54,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "7..0",IDC_CACHE_LINE_SIZE,244,55,64,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,116,67,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,228,67,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,196,67,1,41
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,276,67,1,30
+    CTEXT           "Cache Size in 1K units",IDC_CACHE_SIZE_CAPTION,52,96,
+                    128,11,SS_CENTERIMAGE
+    CTEXT           "L2 Associativity",IDC_L2_ASSOCIATIVITY_CAPTION,164,111,
+                    64,11,SS_CENTERIMAGE
+    CTEXT           "Reserved",IDC_RESERVED1_CAPTION,212,96,32,11,
+                    SS_CENTERIMAGE
+    CTEXT           "Cache Line Size",IDC_CACHE_LINE_SIZE_CAPTION,244,96,64,
+                    11,SS_CENTERIMAGE
+    CTEXT           "11..8",IDC_RESERVED1,212,54,32,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "0",IDC_CACHE_SIZE_VALUE,99,110,35,10
+    LTEXT           "ECX:",IDC_STATIC,15,55,22,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_L2_DECODED,195,131,73,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,196,121,1,10
+    LTEXT           "Intel",IDC_PLATFORM,1,179,16,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CPUID.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "CPUID.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_CPUID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 391
+    END
+
+    IDD_LEAVES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CPUID_BASIC_3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_1_EAX_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_CPUID_BASIC_1_EBX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CPUID_BASIC_1_ECX_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_CPUID_BASIC_1_EDX_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_CPUID_BASIC_1_EDX_CAPTIONS_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 375
+    END
+
+    IDD_CPUID_BASIC_2_REGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CPUID_EXTENDED_0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_EXTENDED_2_4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_CPUID_EXTENDED_5_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_EXTENDED_7_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_EXTENDED_10_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_CPUID_EXTENDED_8_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_CPUID_EXTENDED_1_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_CPUID_BASIC_4_0_31, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_BLOCK_DIAGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_CPUID_BASIC_7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_1_EAX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CPUID_BASIC_1_ECX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_CPUID_BASIC_1_EDX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_CPUID_BASIC_1_EDX_CAPTIONS_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 375
+    END
+
+    IDD_CPUID_EXTENDED_1_EAX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_CPUID_EXTENDED_1_EBX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_CPUID_EXTENDED_1_ECX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_CPUID_EXTENDED_1_EDX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_CPUID_EXTENDED_1_EDX_CAPTIONS_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 375
+    END
+
+    IDD_CPUID_EXTENDED_5_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_BASIC_6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_CPUID_BASIC_10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_CPUID_EXTENDED_6_EABX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_EXTENDED_6_ECX_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CPUID_EXTENDED_7_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_CPUID_EXTENDED_8_AMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_CPUID_EXTENDED_6_INTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COPY                BITMAP                  "res\\COPY.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CPUID..."
+    IDS_REG                 "Reg"
+    IDS_FIELD               "Field"
+    IDS_DESC                "Desc"
+    IDS_TEXT                "Interpretation of descriptor"
+    IDS_CPUID_NOT_SUPPORTED "This processor does not support the CPUID instruction"
+    IDS_CPUID2_COUNT        "Number of times to execute CPUID(2) to get all descriptors"
+    IDS_ITER                "Iter"
+    IDS_WRITESPECS          "&Write CPUID info file"
+    IDS_READSPECS           "&Read CPUID info file"
+    IDS_FILTER              "CPUID files (*.cpuid)|*.cpuid|All files (*.*)|*.*|"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BRAND_INDEX_BASE    "(Brand index not applicable)"
+    IDS_BRAND_INDEX_01H     "Intel ® Celeron ® processor"
+    IDS_BRAND_INDEX_02H     "Intel ® Pentium ® III processor"
+    IDS_BRAND_INDEX_03H     "Intel ® Pentium ® III Xeon(tm) processor\nIntel ® Celeron ® processor"
+    IDS_BRAND_INDEX_04H     "Intel ® Pentium ® III processor"
+    IDS_BRAND_INDEX_06H     "Mobile Intel ® Pentium ® III processor-M"
+    IDS_BRAND_INDEX_07H     "Mobile Intel ® Celeron ® processor"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BRAND_INDEX_END     "Brand index value out of range"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BRAND_INDEX_08H     "Intel ® Pentium ® 4 processor"
+    IDS_BRAND_INDEX_09H     "Intel ® Pentium ® 4 processor"
+    IDS_BRAND_INDEX_0AH     "Intel ® Celeron ® processor"
+    IDS_BRAND_INDEX_0BH     "Intel ® Xeon(tm) processor\nIntel ® Xeon(tm) processor MP"
+    IDS_BRAND_INDEX_0CH     "Intel ® Xeon(tm) processor MP"
+    IDS_BRAND_INDEX_0EH     "Mobile Intel ® Pentium ® 4 processor\nIntel ® Xeon(tm) processor"
+    IDS_BRAND_INDEX_0FH     "Mobile Intel ® Celeron ® processor"
+    IDS_BRAND_INDEX_11H     "Mobile Genuine Intel ® processor"
+    IDS_BRAND_INDEX_12H     "Intel ® Celeron ® M processor"
+    IDS_BRAND_INDEX_13H     "Mobile Intel ® Celeron ® processor"
+    IDS_BRAND_INDEX_14H     "Intel ® Celeron ® processor"
+    IDS_BRAND_INDEX_15H     "Mobile Genuine Intel ® processor"
+    IDS_BRAND_INDEX_16H     "Intel ® Pentium ® M processor"
+    IDS_BRAND_INDEX_17H     "Mobile Intel ® Celeron ® processor"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_00H            "Null descriptor"
+    IDS_CTLB_01H            "Instruction TLB: 4K pages, 4-way set associative, 32 entries\nI 4K×4w×32"
+    IDS_CTLB_02H            "Instruction TLB: 4M pages, 4-way set associative, 2 entries\nI 4K×4w×2"
+    IDS_CTLB_03H            "Data TLB: 4K pages, 4-way set associative, 64 entries\nD 4K×4w×64"
+    IDS_CTLB_04H            "Data TLB: 4M pages, 4-way set associative, 8 entries\nD 4M×4w×8"
+    IDS_CTLB_05H            "Data TLB: 4M pages, 4-way set associative, 32 entries\n4M×4w×32"
+    IDS_CTLB_06H            "1st-level instruction cache: 8K, 4-way set associative, 32 byte line size\nI 8K×4w×32"
+    IDS_CTLB_08H            "1st-level instruction cache: 16K, 4-way set associative, 32 byte line size\nI 16K×4w×32"
+    IDS_CTLB_0AH            "1st-level data cache: 8K, 2-way set associative, 32 byte line size\nD 8K×2w×32"
+    IDS_CTLB_0BH            "Instruction TLB: 4M pages, 4-way set associative, 4 entries\nI 4M×4w×4"
+    IDS_CTLB_0CH            "1st-level data cache: 16K, 4-way set associative, 32 byte line size\nD 16K×4w×32"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_22H            "3rd-level cache: 512K, 4-way set associative, 64-byte line size, 2 lines per sector\n512K×4w×64"
+    IDS_CTLB_23H            "3rd-level cache; 1M, 8-way set associative, 64 byte line size, 2 lines per sector\n1M×8w×64"
+    IDS_CTLB_25H            "3rd-level cache: 2M, 8-way set associative, 64 byte line size, 2 lines per sector\n2M×8w×64"
+    IDS_CTLB_29H            "3rd-level cache: 4M, 8-way set associative, 64 byte line size, 2 lines per sector\n4M×8w×64"
+    IDS_CTLB_2CH            "1st-level data cache: 32K, 8-way associative, 64 byte line size\nD 32K×8w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_30H            "1st-level instruction cache: 32K, 8-way set associative, 64 byte line size\nI 32K×8w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_40H            "No 2nd-level cache, or, if processor contains a valid 2nd-level cache, no 3rd-level cache"
+    IDS_CTLB_41H            "2nd-level cache: 128K, 4-way set associative, 32 byte line size\n128K×4w×32"
+    IDS_CTLB_42H            "2nd-level cache: 256K, 4-way set associative, 32 byte line size\n256K×4w×32"
+    IDS_CTLB_43H            "2nd-level cache: 512K, 4-way set associative, 32 byte line size\n512K×4w×32"
+    IDS_CTLB_44H            "2nd-level cache: 1M, 4-way set associative, 32 byte line size\n1M×4w×32"
+    IDS_CTLB_45H            "2nd-level cache: 2M, 4-way set associative, 32 byte line size\n2M×4w×32"
+    IDS_CTLB_46H            "3rd-level cache: 4M, 4-way set associative, 64 byte line size\n4M×4w×64"
+    IDS_CTLB_47H            "3rd-level cache, 8M, 8-way set associative, 64 byte line size\n8M×8w×64"
+    IDS_CTLB_49H            "2nd-level cache: 4M, 16-way set associative, 64 byte line size\n4M×16w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_50H            "Instruction TLB: 4K and 2M or 4M pages, 64 entries\nI 4K+2M/4M×64"
+    IDS_CTLB_51H            "Instruction TLB: 4K and 2M or 4M pages, 128 entries\nI 4K+2M/4M×128"
+    IDS_CTLB_52H            "Instruction TLB: 4K and 2M or 4M pages, 256 entries\nI 4K+2M/4M×256"
+    IDS_CTLB_56H            "Data TLB0: 4M pages, 4-way set associative, 16 entries\nD 4M×4w×16"
+    IDS_CTLB_57H            "Data TLB0: 4K pages, 4-way set associative, 16 entries\nD 4K×4w×16"
+    IDS_CTLB_5BH            "Data TLB: 4K and 4M pages, 64 entries\nD 4K+4M×64"
+    IDS_CTLB_5CH            "Data TLB: 4K and 4M pages, 128 entries\nD 4K+4M×128"
+    IDS_CTLB_5DH            "Data TLB: 4K and 4M pages, 256 entries\nD 4K+4M×254"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_60H            "1st-level data cache: 16K, 8-way set associative, 64 byte line size\n16K×8w×64"
+    IDS_CTLB_66H            "1st-level data cache: 8K, 4-way set associative, 64 byte line size\n8K×4w×64"
+    IDS_CTLB_67H            "1st-level data cache: 16K, 4-way set associative, 64 byte line size\n16K×4w×64"
+    IDS_CTLB_68H            "1st-level data cache: 32K, 4-way set associative, 64 byte line size\n32K×4w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLTB_70H            "Trace cache: 12K-uOp, 8-way set associative\nTr 12K×8w"
+    IDS_CTLB_71H            "Trace cache: 16K-uOp, 8-way set associative\nTr 16K×8w"
+    IDS_CTLB_72H            "Trace cache: 32K-uOp, 8-way set associative\nTr 32K×8w"
+    IDS_CTLB_78H            "2nd-level cache: 128K, 8-way set associative, 64 byte line size\n128K×8w×64"
+    IDS_CTLB_79H            "2nd-level cache: 128K, 8-way set associative, 64 byte line size, 2 lines per sector\n128K×8w×64"
+    IDS_CTLB_7AH            "2nd-level cache: 256K, 8-way set associative, 64 byte line size, 2 lines per sector\n256K×8w×64"
+    IDS_CTLB_7BH            "2nd-level cache: 512K, 8-way set associative, 64 byte line size, 2 lines per sector\n512K×8w×64"
+    IDS_CTLB_7CH            "2nd-level cache: 1M, 8-way set associative, 64 byte line size, 2 lines per sector\n1M×8w×64"
+    IDS_CTLB_7DH            "2nd-level cache: 2M, 8-way set associative, 64 byte line size\n2M×8w×64"
+    IDS_CTLB_7FH            "2nd-level cache: 512K, 2-way set associative, 64 byte line size\n512K×2w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_82H            "2nd-level cache: 256K, 8-way set associative, 32 byte line size\n256K×8w×32"
+    IDS_CTLB_83H            "2nd-level cache: 512K, 8-way set associative, 32 byte line size\n512K×8w×32"
+    IDS_CTLB_84H            "2nd-level cache: 1M, 8-way set associative, 32 byte line size\n1M×8w×32"
+    IDS_CTLB_85H            "2nd-level cache: 2M, 8-way set associative, 32 byte line size\n2M×8w×32"
+    IDS_CTLB_86H            "2nd-level cache: 512K, 4-way set associative, 64 byte line size\n512K×4w×64"
+    IDS_CTLB_87H            "2nd-level cache: 1M, 8-way set associative, 64 byte line size\n1M×8w×64"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_B0H            "Instruction TLB: 4K pages, 4-way set associative, 128 entries\nI 4K×4w×128"
+    IDS_CTLB_B3H            "Data TLB: 4K pages, 4-way set associative, 128 entries\nD 4K×4w×128"
+    IDS_CTLB_B4H            "Data TLB1: 4K pages, 4-way set associative, 256 entries\nD 4K×4w×256"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_F0H            "64-byte prefetching"
+    IDS_CTLB_F1H            "128-byte prefetching"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CTLB_UNUSED         "(unspecified descriptor value)"
+    IDS_CTLB_RESERVED       "Reserved register value"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROCESSOR_00B       "Original OEM processor"
+    IDS_PROCESSOR_01B       "Intel Overdrive ® processor"
+    IDS_PROCESSOR_10B       "Dual processor"
+    IDS_PROCESSOR_11B       "Intel reserved"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_L2_ASSOCIATIVITY_00H "Disabled"
+    IDS_L2_ASSOCIATIVITY_01H "Direct mapped"
+    IDS_L2_ASSOCIATIVITY_02H "2-way associative"
+    IDS_L2_ASSOCIATIVITY_04H "4-way associative"
+    IDS_L2_ASSOCIATIVITY_06H "8-way associative"
+    IDS_L2_ASSOCIATIVITY_08H "16-way associative"
+    IDS_L2_ASSOCIATIVITY_0FH "Fully associative"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CACHE_TYPE_00       "<<no more caches>>"
+    IDS_CACHE_TYPE_01       "Data cache"
+    IDS_CACHE_TYPE_02       "Instruction cache"
+    IDS_CACHE_TYPE_03       "Unified (data + instruction) cache"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CACHE_TYPE_32       "Unsupported cache type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BasicCPU0           "CPUID(0)"
+    IDS_BasicCPU1EAXIntel   "CPUID(1):EAX"
+    IDS_BasicCPU1EBX        "CPUID(1):EBX"
+    IDS_BasicCPU1ECXIntel   "CPUID(1):ECX"
+    IDS_BasicCPU1EDXIntel   "CPUID(1):EDX"
+    IDS_BasicCPU2Regs       "CPUID(2)"
+    IDS_BasicCPU3Regs       "CPUID(3)"
+    IDS_BasicCPU4_1         "CPUID(4, 1)"
+    IDS_BasicCPU4_2         "CPUID(4, 2)"
+    IDS_BasicCPU4_3         "CPUID(4, 3)"
+    IDS_BasicCPU4_4         "CPUID(4, 4)"
+    IDS_BasicCPU4_5         "CPUID(4, 5)"
+    IDS_BasicCPU4_6         "CPU(4, 6)"
+    IDS_BasicCPU1EAXAMD     "CPUID(1):EAX"
+    IDS_BasicCPU1ECXAMD     "CPUID(1):ECX"
+    IDS_BasicCPU1EDXAMD     "CPUID(1):EDX"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ExtendedCPU0        "CPUID(0x80000000)"
+    IDS_ExtendedCPU1Intel   "CPUID(0x80000001)"
+    IDS_ExtendedCPU2        "CPUID(0x80000002)"
+    IDS_ExtendedCPU3        "CPUID(0x80000003)"
+    IDS_ExtendedCPU4        "CPUID(0x80000004)"
+    IDS_ExtendedCPU5Intel   "CPUID(0x80000005)"
+    IDS_ExtendedCPU6Intel   "CPUID(0x80000006)"
+    IDS_ExtendedCPU7Intel   "CPUID(0x80000007)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ExtendedCPU8Intel   "CPUID(0x80000008)"
+    IDS_ExtendedCPU1EAXAMD  "CPUID(0x80000001):EAX"
+    IDS_ExtendedCPU1EBXAMD  "CPUID(0x80000001):EBX"
+    IDS_ExtendedCPU1ECXAMD  "CPUID(0x80000001):ECX"
+    IDS_ExtendedCPU1EDXAMD  "CPUID(0x80000001):EDX"
+    IDS_ExtendedCPU5EAXAMD  "CPUID(0x80000005):EAX"
+    IDS_ExtendedCPU5EBXAMD  "CPUID(0x80000005):EBX"
+    IDS_ExtendedCPU5ECXAMD  "CPUID(0x80000005):ECX"
+    IDS_ExtendedCPU5EDXAMD  "CPUID(0x80000005):EDX"
+    IDS_ExtendedCPU6EAXAMD  "CPUID(0x80000006):EAX"
+    IDS_ExtendedCPU6EBXAMD  "CPUID(0x80000006):EBX"
+    IDS_ExtendedCPU6ECXAMD  "CPUID(0x80000006):ECX"
+    IDS_ExtendedCPU6EDXAMD  "CPUID(0x80000006):EDX"
+    IDS_ExtendedCPU7AMD     "CPUID(0x80000007)"
+    IDS_ExtendedCPU8AMD     "CPUID(0x80000008)"
+    IDS_ExtendedCPU10AMD    "CPUID(0x8000000A)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BasicCPU5Regs       "CPUID(5)"
+    IDS_BasicCPU6Regs       "CPUID(6)"
+    IDS_BasicCPU7Regs       "CPUID(7)"
+    IDS_BasicCPU8Regs       "CPUID(8)"
+    IDS_BasicCPU9Regs       "CPUID(9)"
+    IDS_BasicCPU10Regs      "CPUID(10)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BlockDiagram        "Block Diagram"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPEN_ERROR          "File open error"
+    IDS_UNKNOWN_ERROR       "Unknown error %d (0x%08x)"
+    IDS_SYNTAX_ERROR        "Error in file\nFile: ""%s""\nLine: %d\n%s"
+    IDS_CLOSESPECS          "&Close CPUID info file"
+    IDS_ExtendedCPU1AMD     "CPUID(0x80000001)"
+    IDS_DEFAULT_EXTENSION   ".cpuid"
+    IDS_DIRECT_MAPPED_SHORT "direct"
+    IDS_DIRECT_MAPPED_LONG  "direct-mapped"
+    IDS_FULLY_ASSOCIATIVE_SHORT "full"
+    IDS_FULLY_ASSOCIATIVE_LONG "fully-associative"
+    IDS_NWAY_SHORT          "%dw"
+    IDS_NWAY_LONG           "%d-way associative"
+    IDS_FMT_SHORT_2M_TLBD   "D 2M+4M×%s×%d"
+    IDS_FMT_SHORT_2M_TLBI   "I 2M+4M×%s×%d"
+    IDS_FMT_LONG_2M_TLBD    "Data TLB, 2M+4M  pages, %s, %d entries"
+    IDS_FMT_LONG_2M_TLBI    "Instruction TLB, 2M+4M pages, %s, %d entries"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_MISSING_CPUID_BLOCK "Missing <CPUID:block>"
+    IDS_ERROR_EXPECTED_CPUID_CPUID "Expected <CPUID:CPUID ...>"
+    IDS_ERROR_MISSING_RIGHT_POINTY "Expected "">"" at end of element"
+    IDS_ERROR_EXPECTED_EAX_VALUE "Expected ""EAX ="""
+    IDS_ERROR_EXPECTED_EQUAL "Expected to find ""="""
+    IDS_ERROR_EXPECTED_QUOTE "Expected "" opening or closing value"
+    IDS_ERROR_EXPECTED_ECX_VALUE "Expected ECX="
+    IDS_ERROR_EXPECTED_CPUID_EXX "Expected <CPUID:ExX"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_EXPECTED_VALUE_KEYWORD "Expected value="
+    IDS_ERROR_EXPECTED_SLASH_POINTY "Expected />"
+    IDS_ERROR_MISSING_EAX   "Missing CPUID:EAX"
+    IDS_ERROR_MISSING_EBX   "Missing CPUID:EBX"
+    IDS_ERROR_MISSING_ECX   "Missing CPUID:ECX"
+    IDS_ERROR_MISSING_EDX   "Missing CPUID:EDX"
+    IDS_ERROR_EOF           "Unexpected end-of-file found"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENDED_5_EAX_31_24 "Data TLB associativity\n%02XH\nA"
+    IDS_EXTENDED_5_EAX_23_16 "Data TLB entries\n%d\nN"
+    IDS_EXTENDED_5_EAX_15_8 "Instruction TLB associativity\n%02XH\nA"
+    IDS_EXTENDED_5_EAX_7_0  "Instruction TLB entries\n%d\nN"
+    IDS_EXTENDED_5_EAX_CAPTION "2MB and 4MB page TLB parameters"
+    IDS_EXTENDED_5_EBX_31_24 "Data TLB associativity\n%02XH\nA"
+    IDS_EXTENDED_5_EBX_23_16 "Data TLB entries\n%d\nN"
+    IDS_EXTENDED_5_EBX_15_8 "Instruction TLB associativity\n%02XH\nA"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENDED_5_EBX_7_0  "Instruction TLB entryes\n%d\nN"
+    IDS_EXTENDED_5_EBX_CAPTION "4K page TLB parameters"
+    IDS_EXTENDED_5_ECX_31_24 "Cache size\n%d\nK"
+    IDS_EXTENDED_5_ECX_23_16 "Associativity\n%02XH\nA"
+    IDS_EXTENDED_5_ECX_15_8 "Cache lines per tag\n%d\nN"
+    IDS_EXTENDED_5_ECX_7_0  "Cache line size\n%d\nN"
+    IDS_EXTENDED_5_ECX_CAPTION "L1 data cache parameters"
+    IDS_EXTENDED_5_EDX_31_24 "Cache size\n%d\nK"
+    IDS_EXTENDED_5_EDX_23_16 "Associativity\n%02XH\nA"
+    IDS_EXTENDED_5_EDX_15_8 "Cache lines per tag\n%d\nN"
+    IDS_EXTENDED_5_EDX_7_0  "Cache line size\n%d\nN"
+    IDS_EXTENDED_5_EDX_CAPTION "L1 instruction cache parameters"
+    IDS_EXTENDED_6_EAX_31_28 "Data TLB associativity\n%02XH\nA"
+    IDS_EXTENDED_6_EAX_27_16 "Data TLB entries\n%d\nN"
+    IDS_EXTENDED_6_EAX_15_12 "Instruction TLB associativity\n%02XH\nA"
+    IDS_EXTENDED_6_EAX_11_0 "Instruction TLB entries\n%d\nN"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENDED_5_ASSOCIATIVITY_RESERVED "Reserved"
+    IDS_EXTENDED_5_ASSOCIATIVITY_FULL "Fully associative"
+    IDS_EXTENDED_5_ASSOCIATIVITY_N_WAY "%d-way associative"
+    IDS_EXTENDED_6_ECX_31_16 "L2 cache size in KB\n%d\nK"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BasicCPU4_0         "CPUID(4, 0)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENDED_6_EAX_CAPTION "L2 cache 2MB and 4MB page TLB"
+    IDS_EXTENDED_6_EBX_31_28 "Data TLB associativity\n%01XH\nA"
+    IDS_EXTENDED_6_EBX_27_16 "Data TLB entries\n%d\nN"
+    IDS_EXTENDED_6_EBX_15_12 "Instruction TLB associativity\n%01XH\nA"
+    IDS_EXTENDED_6_EBX_11_0 "Instruction TLB entries\n%d\nN"
+    IDS_EXTENDED_6_EBX_CAPTION "L2 cache 4K page TLB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENDED_6_ECX_15_12 "L2 cache associativity\n%XH\nA"
+    IDS_EXTENDED_6_ECX_11_8 "L2 cache lines per tag\n%d\nN"
+    IDS_EXTENDED_6_ECX_7_0  "L2 cache line size in bytes\n%d\nN"
+    IDS_EXTENDED_6_ECX_CAPTION "L2 cache parameters"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_SHORT_4K_TLBD   "D 4K×%s×%d"
+    IDS_FMT_SHORT_4K_TLBI   "I 4K×%s×%d"
+    IDS_FMT_LONG_4K_TLBD    "Data TLB, 4K  pages, %s, %d entries"
+    IDS_FMT_LONG_4K_TLBI    "Instruction TLB, 4K pages, %s, %d entries"
+    IDS_FMT_L1_DATA_LONG    "1st level data cache, %dK, %s, %d byte line size"
+    IDS_FMT_L1_INST_LONG    "1st level instruction cache, %dK, %s, %d byte line size"
+    IDS_FMT_L1_DATA_SHORT   "D %dK×%s×%d"
+    IDS_FMT_L1_INST_SHORT   "I %dK×%s×%d"
+    IDS_FMT_L2_LONG         "2nd level cache, %dK, %s, %d byte line size"
+    IDS_FMT_L2_SHORT        "%dK×%s×%d"
+    IDS_TESTMODE            "&Test mode"
+    IDS_PREFETCH            "Prefetch %d"
+    IDS_UNKNOWN_LOGICAL     "Unspecified virtual address lines; 32 bit addresses assumed"
+    IDS_80000008_EAX_VAB    "CPUID(0x80000008):EAX.VirtualAddressBits"
+    IDS_PA_UNSPECIFIED      "Physical Address Lines unspecified"
+    IDS_80000008_EAX_PAB    "CPUID(0x80000008):EAX.PhysicalAddressBits"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_L2_SHORT_ASSOCIATIVITY_00H "Disabled"
+    IDS_L2_SHORT_ASSOCIATIVITY_01H "dir"
+    IDS_L2_SHORT_ASSOCIATIVITY_02H "2w"
+    IDS_L2_SHORT_ASSOCIATIVITY_04H "4w"
+    IDS_L2_SHORT_ASSOCIATIVITY_06H "8w"
+    IDS_L2_SHORT_ASSOCIATIVITY_08H "16w"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_L2_SHORT_ASSOCIATIVITY_0FH "full"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_CPU_TYPE        "Family %d Model %d Stepping %d, %s"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\CPUID.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

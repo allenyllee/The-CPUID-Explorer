@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859"?>
+<CPUID:block>
+   <CPUID:CPUID EAX="0">
+      <CPUID:EAX value="0x00000000"/>
+      <CPUID:EBX value="0x00000000"/>
+      <CPUID:ECX value="0x00000000"/>
+      <CPUID:EDX value="0x00000000"/>
+   </CPUID:CPUID>
+</CPUID:block>

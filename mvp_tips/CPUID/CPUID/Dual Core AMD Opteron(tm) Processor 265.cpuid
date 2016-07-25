@@ -1,0 +1,165 @@
+<?xml version "1.0"?>
+<CPUID:block>
+   <CPUID:CPUID EAX="0x0">
+     <CPUID:EAX value="0x00000001" />
+     <CPUID:EBX value="0x68747541" />
+     <CPUID:ECX value="0x444d4163" />
+     <CPUID:EDX value="0x69746e65" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x1">
+     <CPUID:EAX value="0x00020f12" />
+     <CPUID:EBX value="0x00020800" />
+     <CPUID:ECX value="0x00000001" />
+     <CPUID:EDX value="0x178bfbff" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000000">
+     <CPUID:EAX value="0x80000018" />
+     <CPUID:EBX value="0x68747541" />
+     <CPUID:ECX value="0x444d4163" />
+     <CPUID:EDX value="0x69746e65" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000001">
+     <CPUID:EAX value="0x00020f12" />
+     <CPUID:EBX value="0x00000c04" />
+     <CPUID:ECX value="0x00000003" />
+     <CPUID:EDX value="0xe3d3fbff" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000002">
+     <CPUID:EAX value="0x6c617544" />
+     <CPUID:EBX value="0x726f4320" />
+     <CPUID:ECX value="0x4d412065" />
+     <CPUID:EDX value="0x704f2044" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000003">
+     <CPUID:EAX value="0x6f726574" />
+     <CPUID:EBX value="0x6d74286e" />
+     <CPUID:ECX value="0x72502029" />
+     <CPUID:EDX value="0x7365636f" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000004">
+     <CPUID:EAX value="0x20726f73" />
+     <CPUID:EBX value="0x00353632" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000005">
+     <CPUID:EAX value="0xff08ff08" />
+     <CPUID:EBX value="0xff20ff20" />
+     <CPUID:ECX value="0x40020140" />
+     <CPUID:EDX value="0x40020140" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000006">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x42004200" />
+     <CPUID:ECX value="0x04008140" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000007">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x0000000f" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000008">
+     <CPUID:EAX value="0x00003028" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000001" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000009">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000a">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000b">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000c">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000d">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000e">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x8000000f">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000010">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000011">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000012">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000013">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000014">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000015">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000016">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000017">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+   <CPUID:CPUID EAX="0x80000018">
+     <CPUID:EAX value="0x00000000" />
+     <CPUID:EBX value="0x00000000" />
+     <CPUID:ECX value="0x00000000" />
+     <CPUID:EDX value="0x00000000" />
+   </CPUID:CPUID>
+</CPUID:block>
